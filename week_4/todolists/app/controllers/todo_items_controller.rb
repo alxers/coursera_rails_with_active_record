@@ -13,7 +13,7 @@ class TodoItemsController < ApplicationController
   end
 
   def create
-    @todo_item = @todo_list.todo_item.new(todo_item_params)
+    @todo_item = @todo_list.todo_items.new(todo_item_params)
 
     respond_to do |format|
       if @todo_item.save
